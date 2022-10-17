@@ -1,4 +1,4 @@
-#incude < stdio.h >
+#include <stdio.h>
 
 /**
  * main - This is the Entry point for the function
