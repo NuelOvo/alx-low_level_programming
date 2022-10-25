@@ -1,16 +1,13 @@
 #include "main.h"
 
 /**
- *
- * puts_half - prints half of a string
- * @str: input string
- * Retur: returns nothing
- *
- **/
-
+ * puts_half - prints half of a string.
+ * @str: input string.
+ * Return: no return.
+ */
 void puts_half(char *str)
 {
-	int count = 0, x;
+	int count = 0, i;
 
 	while (count >= 0)
 	{
@@ -20,13 +17,11 @@ void puts_half(char *str)
 	}
 
 	if (count % 2 == 1)
-	x = count / 2;
+	i = count / 2;
 	else
-	x = (count -1)/2;
+	i = (count - 1) / 2;
 
-	for (x++; x < count; x++)
-	_putchar(str[x]);
+	for (i++; i < count; i++)
+	_putchar(str[i]);
 	_putchar('\n');
 }
-
-
