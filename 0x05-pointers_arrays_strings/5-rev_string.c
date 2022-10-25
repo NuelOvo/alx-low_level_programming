@@ -1,24 +1,22 @@
 #include "main.h"
 
 /**
- *
- * rev_string - reverse the string
+ * rev_string - reverse string
  * @s: string
- * Return
- **/
+ * Return: void
+ */
 
 void rev_string(char *s)
 {
-	int x, max, half;
-	char first; last;
+	int i, max, half;
+	char first, last;
 
-	x = 0;
-	while (s[x] != '\0')
+	i = 0;
+	while (s[i] != '\0')
 	{
-	x++;
+	i++;
 	}
-
-	max = x - 1;
+	max = i - 1;
 	half = max / 2;
 	while (half >= 0)
 	{
