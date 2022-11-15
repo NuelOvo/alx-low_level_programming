@@ -20,3 +20,14 @@ int primeFinder(int a, int b)
 
 	return (1);
 }
+
+/**
+ * is_prime_number - tells if an integer is a prime number or not
+ * @n: the number to check
+ * Return: 0 if the number is not prime, 1 if it is
+ **/
+
+int is_prime_number(int n)
+{
+	return (primeFinder(n, 2));
+}
