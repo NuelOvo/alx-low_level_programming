@@ -7,9 +7,10 @@
  *
  * @argc: argument counter
  * @argv: argument vector
- * Return: 1 if Error such as symbol that are not numbers,
+ *
+ * Return: 1 if ERROR such as symbols that are not numbers,
  * 0 if nothing is passed
- **/
+ */
 
 int main(int argc, char *argv[])
 {
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
 	if (argc < 2)
 	{
 		printf("0\n");
-		return(0);
+		return (0);
 	}
 
 	for (c = 1; c < argc; c++)
@@ -29,11 +30,11 @@ int main(int argc, char *argv[])
 			if (argv[c][d] < '0' || argv[c][d] > '9')
 			{
 				printf("Error\n");
-				return(1);
+				return (1);
 			}
 		}
 		n += atoi(argv[c]);
 	}
 	printf("%d\n", n);
-	return(0);
+	return (0);
 }
